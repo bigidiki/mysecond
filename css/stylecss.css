@@ -116,3 +116,70 @@ footer{
     align-items: center;
     margin: 0px 7px;
 }
+.social a:hover{
+    background:linear-gradient(45deg,#5734ca 20%,#a178f8) ;
+    box-shadow: 2px 2px 30px rgb(161,120,248,0.1);
+    color: #ffffff;
+    transition: all ease 0.3s;
+}
+.copyright{
+    color: #ffffff;
+}
+.arrow{
+    align-self: end;
+    width: 50%;
+    border-right: 1px solid white;
+    height: 16%;
+    margin-bottom: 3.5em;
+    position: absolute;
+    bottom: 5px;
+}
+.arrow::after{
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-style: solid;
+    border-width: 11px 11px 0px 11px;
+    border-color: white transparent transparent transparent;
+    right: -0.7em;
+    bottom: -2px;
+}
+.subscribe{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/bg2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.subscribe img{
+    width: 80%;
+}
+.subscribe h2{
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-size: 2rem;
+}
+.search{
+    width: 400px;
+    height: 50px;
+    background-color: #1a191c;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+}
+.search input{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+    color: #ffffff;
+}
