@@ -16,9 +16,9 @@
            <div class="menu-icon"></div>
            <ul class="menu">
                <li><a href="#">Home</a></li>
-               <li><a href="#"></a></li>
-               <li><a href="#"></a></li>
-               <li><a href="#"></a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Contact</a></li>
+               <li><a href="#">Team</a></li>
            </ul>
        </nav>
    
@@ -59,11 +59,11 @@
 </section> 
 <script type="text/javascript" src="css/javascripte.js"></script>
 <script type="text/javascript">
-$(Document).ready(function(){
-    $('.menu.icon').click(function(){
-        $('menu-icon').toggleClass('active')
+    $(Document).ready(function(){
+        $('.menu-icon').click(function(){
+        $('menu-icon,.menu').toggleClass('active')
+        })
     })
-})
-</script>
+    </script>
 </body>
 </html>

@@ -40,6 +40,37 @@ nav{
 .menu-icon:active:before{
     content: '\f00d';
 }
+.menu{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(22,22,27,0.9);
+    z-index: 2;
+    flex-direction: column;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+.menu.active{
+    display: flex;
+}
+.menu li{
+    margin: 20px;
+}
+.menu li a{
+    color: #ffffff;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    background: linear-gradient(45deg,#5734ca 20%,#a178f8);
+    padding: 10px 20px;
+}
+.menu li:hover{
+    transform: scale(1.1);
+}
 .menu-icon{
     position: fixed;
     right: 60px;
@@ -52,6 +83,7 @@ nav{
     align-items: center;
     margin: 60px 10%;
 }
+
 .text{
     width: 400px;
 }
@@ -107,7 +139,7 @@ footer{
 }
 .social{
     display: flex;
-    z-index: 3;
+    z-index: 1;
 }
 .social a{
     width: 40px;
