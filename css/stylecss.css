@@ -57,6 +57,10 @@ nav{
 .menu.active{
     display: flex;
 }
+.main-box.active,.footer.active,.logo.active,.subscribe.active{
+    filter: blur(4px);
+
+}
 .menu li{
     margin: 20px;
 }
@@ -247,4 +251,52 @@ footer{
 }
 .r{
     width: 10px;
+}
+@media(max-width:930px){
+    nav{
+        padding: 40px 10px 20px 30px;
+    }
+    .img img{
+        height: 300px;
+    }
+    .main-box{
+        padding: 20px 10%;
+    }
+    .text h2{
+        font-size: 4rem;
+        line-height: 60px;
+    }
+}
+@media(max-width:630px){
+    img{
+		display: none;
+	}
+	.text{
+		width:100%;
+		margin-top: auto;
+		position: absolute;
+		left:50%;
+		top: 50%;
+		transform: translate(-50%,-50%);
+		padding: 40px;
+	}
+	.arrow{
+		display: none;
+	}
+	footer{
+		bottom: 20px;
+		padding: 5px 10px;
+	}
+	.copyright{
+		margin:0px;
+		padding: 5px 10px;
+	}
+	.search{
+		width:90%;
+	}
+	.subscribe h2{
+		width:90%;
+		text-align: center;
+	}
+
 }
