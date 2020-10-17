@@ -14,6 +14,12 @@
        <nav>
            <a href="#" class="logo"><img src="images/logo.png" alt="logo"></a>
            <div class="menu-icon"></div>
+           <ul class="menu">
+               <li><a href="#">Home</a></li>
+               <li><a href="#"></a></li>
+               <li><a href="#"></a></li>
+               <li><a href="#"></a></li>
+           </ul>
        </nav>
    
 <div class="main-box">
@@ -21,7 +27,7 @@
         <span><font>We Do</font> What You Want</span>
         <h2>User Interface</h2>
         <p>Minimal And Beautiful User Interface For Your Upcoming Projects</p>
-        <a href="#" class="btn">Our work</a>
+        <a href="#" class="btn" >Our work</a>
     </div>
     <div class="img">
         <img src="images/interface.png" alt="interface">
@@ -35,11 +41,12 @@
     </div>
     <div class="copyright">Copyright - 2020 GoingToInternet</div>
 
-</footer>
+
 <div class="arrow">
-    
+</footer>
 </div>
 </section>
+
 <section class="subscribe">
     <img src="images/designs1.png" alt="designs">
     <h2>Subscribe For Notifications</h2>
@@ -47,7 +54,16 @@
         <input type="text" placeholder="Search Something Here"/>
         <a href="#">Send</a>
     </div>
-</section>
-
+ <div class="r"><p>r </p></div>
+<div class="right">Copyright 2020 - GoingToInternet </div>
+</section> 
+<script type="text/javascript" src="css/javascripte.js"></script>
+<script type="text/javascript">
+$(Document).ready(function(){
+    $('.menu.icon').click(function(){
+        $('menu-icon').toggleClass('active')
+    })
+})
+</script>
 </body>
 </html>
